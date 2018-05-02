@@ -1,3 +1,13 @@
+
+## This is a fork of the AWS CodeBuild curated Docker images... 
+
+
+Note that they are similar but may vary.   I have modified these ( only node.js 6.3.1 so far ) 
+to be a default launch engine to try and run local builds with kodebuild ( npm module ) 
+
+
+
+
 # AWS CodeBuild curated Docker images
 
 This repository holds Dockerfiles of official AWS CodeBuild curated Docker images. Please refer to [the AWS CodeBuild User Guide](http://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref.html) for list of environments supported by AWS CodeBuild.
