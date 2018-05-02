@@ -120,6 +120,10 @@ RUN set -ex \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs \
     && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN npm install -g kodebuild
+
 CMD [ "node" ]
 
-ENTRYPOINT ["dockerd-entrypoint.sh"]
+#ENTRYPOINT ["dockerd-entrypoint.sh"]
+ENTRYPOINT cd /codebuild && kodebuild buildspec.yml
+
